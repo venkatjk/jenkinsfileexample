@@ -1,5 +1,9 @@
 pipeline {
 	agent any
+	
+	options {
+		timestamps()
+		}
 	stages {
 		stage("Paralle"){
 			steps {
@@ -12,7 +16,7 @@ pipeline {
 				 }
 				)
 			}
-			exit 1
+			
 		}
 	}
 	 post { 
