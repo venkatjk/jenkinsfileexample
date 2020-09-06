@@ -2,7 +2,7 @@ pipeline {
 	//agent any
 	agent {
 		node {
-			label 'windows slave'
+			label 'slave1'
 		}
 	}
 	
