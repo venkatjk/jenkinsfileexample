@@ -25,6 +25,16 @@ pipeline {
 			}
 			
 		}
+		stage("Build") {
+			agent {
+				node {
+					label 'slave1'
+				}
+			}
+			steps {
+				echo 'From build stage'
+			}
+		}
 	}
 	 post { 
         failure { 
