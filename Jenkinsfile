@@ -1,6 +1,6 @@
 pipeline {
-	//agent none
-	agent any
+	agent none
+	//agent any
 	//agent {
 		//node {
 			//label 'slave1'
@@ -13,7 +13,7 @@ pipeline {
 		
 	stages {
 		stage("Paralle"){
-			//agent any
+			agent any
 			steps {
 				parallel (
 				 "Taskone" : {
@@ -27,11 +27,11 @@ pipeline {
 			
 		}
 		stage("Build") {
-			//agent {
-				//node {
-					//label 'slave1'
-				//}
-			//}
+			agent {
+				node {
+					label 'slave1'
+				}
+			}
 			steps {
 				echo 'From build stage'
 			}
