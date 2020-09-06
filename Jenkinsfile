@@ -7,7 +7,7 @@ pipeline {
 				 "Taskone" : {
 					 echo "from parallel...1"
 				 },
-				 "Tasktwo: : {
+				 "Tasktwo" : {
 					 echo "from parallel......2"
 				 }
 				)
