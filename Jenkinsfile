@@ -1,9 +1,14 @@
 pipeline {
-	agent any
+	//agent any
+	agent {
+		node {
+			lable 'windows slave'
+		}
+	}
 	
-	//options {
-		//timestamps()
-	//	}
+	options {
+		timestamps()
+		}
 		
 	stages {
 		stage("Paralle"){
