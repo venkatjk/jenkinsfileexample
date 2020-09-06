@@ -1,10 +1,11 @@
 pipeline {
 	//agent none
-	agent {
-		node {
-			label 'slave1'
-		}
-	}
+	agent any
+	//agent {
+		//node {
+			//label 'slave1'
+		//}
+	//}
 	
 	options {
 		timestamps()
