@@ -13,7 +13,7 @@ pipeline {
 		
 		environment {
 			NAME = 'VENKAT'
-			CITY = 'NCL'
+			JDK = 'C:\Java\jdk1.8.0_112'
 		}
 	stages {
 		stage("Paralle"){
