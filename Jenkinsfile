@@ -11,6 +11,10 @@ pipeline {
 		timestamps()
 		}
 		
+		environment {
+			NAME = 'VENKAT'
+			CITY = 'NCL'
+		}
 	stages {
 		stage("Paralle"){
 			agent any
@@ -34,6 +38,7 @@ pipeline {
 			}
 			steps {
 				echo 'From build stage'
+				echo env
 			}
 		}
 	}
