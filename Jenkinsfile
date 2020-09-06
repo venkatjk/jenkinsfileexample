@@ -1,5 +1,5 @@
 pipeline {
-	agent any
+	agent none
 	//agent {
 		//node {
 			//label 'slave1'
@@ -12,6 +12,7 @@ pipeline {
 		
 	stages {
 		stage("Paralle"){
+			agent any
 			steps {
 				parallel (
 				 "Taskone" : {
