@@ -12,8 +12,8 @@ pipeline {
 		}
 		
 		environment {
-			NAME = 'VENKAT'
-			JDK = "C:\\Java\\jdk1.8.0_112"
+			USE_JDK = 'true'
+			JDK = 'C:\Java\jdk1.8.0_112'
 		}
 	stages {
 		stage("Paralle"){
