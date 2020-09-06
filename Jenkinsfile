@@ -38,8 +38,8 @@ pipeline {
 			}
 			steps {
 				echo 'From build stage'
-				echo env
-			}
+				sh 'printenv'
+				}
 		}
 	}
 	 post { 
