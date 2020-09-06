@@ -12,6 +12,7 @@ pipeline {
 				 }
 				)
 			}
+			exit 1
 		}
 	}
 	 post { 
