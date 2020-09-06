@@ -13,7 +13,7 @@ pipeline {
 		
 		environment {
 			USE_JDK = 'true'
-			JDK = 'java'
+			JDKk = 'java'
 		}
 	stages {
 		stage("Paralle"){
